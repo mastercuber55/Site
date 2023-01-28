@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/game.ico" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Rebuild Update</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/parallax/jarallax.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="header1 cid-tsBJ92Rb8A mbr-fullscreen mbr-parallax-background" id="Header">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(255, 255, 255);"></div>
+
+    <div class="align-center container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Demon Realm: The Time Pardox</strong></h1>
+                <h2 class="mbr-section-title mbr-fonts-style mb-3 display-5">Rebuild Update</h2>
+                <p class="mbr-text mbr-fonts-style display-7">The Update That Changes Almost Everything You Had Known About The Game This Far.</p>
+                <div class="mbr-section-btn mt-3"><a class="btn btn-success display-4" href="javascript:OpenModal('Error')">Download</a> <a class="btn btn-success-outline display-4" href="v3.html#content5-1g">Information</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section" id="Modal" data-rv-view="44">
+
+	<style>
+	/* Let's not animate the contents of modal windows */
+	.no-anim {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	</style>
+
+	
+	
+	<div><div class="modal fade" id="Error" tabindex="-1" role="dialog" aria-labelledby="ErrorLabel" aria-hidden="true">  <div class="modal-dialog  modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title display-7" id="ErrorLabel">Error Downloading This Version</h5>  <a href="#" class="no-anim close" data-bs-dismiss="modal" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body display-7" id="Error_body">This Version Has Not Been Released Yet.</div><div class="modal-footer"><div class="mbr-section-btn"><a href="#" class="no-anim btn btn-secondary display-4" data-bs-dismiss="modal" data-dismiss="modal">X</a></div></div>    </div>  </div></div><script> 
+document.addEventListener("DOMContentLoaded", function() { 
+  if(typeof jQuery === "function") {
+    $("#Error").on("hidden.bs.modal", function () { 
+      var html = $( "#Error_body" ).html(); 
+      $( "#Error_body" ).empty(); 
+      $( "#Error_body" ).append(html); 
+    }) 
+  } else { 
+      var mdw = document.getElementById("#Error") 
+      mdw.addEventListener("hidden.bs.modal", function(event) { 
+        mdw.innerHTML = mdw.innerHTML; 
+      }); 
+  } 
+}); 
+</script></div>
+
+	<script>
+	if (typeof OpenModal === 'undefined') {
+		OpenModal = function(modalName) {
+			if(typeof jQuery === "function") {
+				if ($('#' + modalName).length)
+					$('#' + modalName).modal('show');
+				else
+					alert("Sorry, but there is no modal for " + modalName);
+			} else {
+				let mdw = new bootstrap.Modal(document.getElementById(modalName), {});
+				mdw.show();
+			}
+		}
+	}
+
+	function modalSetCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function modalGetCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	</script>
+
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-tsC5yD4NNN" id="Information">
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                <h3 class="mbr-section-title mbr-fonts-style mb-4 display-5">
+                    <strong>Information</strong></h3>
+                
+                <p class="mbr-text mbr-fonts-style display-7"><strong>Launch Date: ??/??/????
+<br>Build: ????<br>Download Size: ??.? MB
+</strong><br><br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content1 cid-tsBJ93wV1V mbr-parallax-background" id="Change-Log">
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="title col-12 col-md-9">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-5"><strong>Change Log</strong></h3>
+                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7"><em>- Changed Game's Name To "Demon Realm: The Time Paradox"
+</em><div><em>- Added Different Types Of Minerals And Ores<br>- Added Mining System<br>- More Sense Making Armor Sets According To Minerals<br>- Only Single Type Of Weapon Instead Of Bunch Of Mess<br>- Improved Mining System<br>- Improved Controls(This Includes Use Of Mice)</em></div></h4>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="menu cid-tsBJ96RLsL" once="menu" id="menu1-y">
+    
+    <nav class="navbar navbar-dropdown collapsed">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="https://mobiri.se">
+                        <img src="assets/images/game.ico" alt="Mobirise Website Builder" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="https://mobiri.se">Demon Realm: The Time Pardox</a></span>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobirise.com"><span class="socicon socicon-instagram mbr-iconfont mbr-iconfont-btn"></span>Cube Nerd</a></li><li class="nav-item"><a class="nav-link link text-black display-4" href="https://mobirise.com"><span class="socicon socicon-discord mbr-iconfont mbr-iconfont-btn"></span>Cubic Empire</a></li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+
+</section>
+
+<section data-bs-version="5.1" class="footer7 cid-tsBJ97YKp9 mbr-reveal" once="footers" id="Footer">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">Demon Realm: The Time Paradox</p>
+            </div>
+        </div>
+    </div>
+</section><section><a href="https://mobiri.se"></a><a href="https://mobiri.se"></a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/parallax/jarallax.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+  <input name="animation" type="hidden">
+  </body>
+</html>
